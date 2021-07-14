@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import ReactPlayer from "react-player";
 import axios from "axios";
 import Header from "./Components/Header";
-import Container from "./Components/Container";
+import Media from "./Components/Media";
 import "./App.css";
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
   return (
     <div className="App">
       <Header data={nasaData} />
-      <Container data={nasaData} />
+      <Media data={nasaData} />
+      <ReactPlayer data={nasaData} />
     </div>
   );
 }
