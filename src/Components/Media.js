@@ -51,6 +51,11 @@ const MediaContainer = styled.div`
     font-size: 1.4em;
   }
 `;
+const TextContainer = styled.div`
+  p {
+    backdrop-filter: blur(4px);
+  }
+`;
 
 export default function Media(props) {
   const { data } = props;
@@ -65,10 +70,12 @@ export default function Media(props) {
         <img src="https://images-assets.nasa.gov/image/PIA18033/PIA18033~orig.jpg"></img>
         {data.copyright}
       </p>
-      <p>
-        <b>Explanation: </b>
-        {data.explanation}
-      </p>
+      <TextContainer>
+        <p>
+          <b>Explanation: </b>
+          {data.explanation}
+        </p>
+      </TextContainer>
     </MediaContainer>
   );
 }
