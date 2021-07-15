@@ -12,12 +12,18 @@ export default function Header(props) {
     h1 {
       background-image: url(${stars});
       color: white;
+      padding-top: 2em;
     }
     a {
       color: white;
+      font-size: 1.2em;
     }
     p {
       color: white;
+      padding-bottom: 2em;
+      font-size: 1.2em;
+      padding-left: 4em;
+      padding-right: 4em;
     }
   `;
 

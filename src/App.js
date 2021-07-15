@@ -26,7 +26,6 @@ function App() {
     <div className="App">
       <Header data={nasaData} />
       <Media data={nasaData} />
-      <ReactPlayer data={nasaData} />
     </div>
   );
 }

@@ -15,12 +15,15 @@ const MediaContainer = styled.div`
     transition: all 2s ease-in-out;
   }
   .video {
+    padding-top: 4em;
     margin: 0 auto;
   }
   img {
     width: 30em;
     height: 30em;
     margin: 0 auto;
+    opacity: 70%;
+    padding-top: 3em;
     &:hover {
       transform: scale(1.5);
       transition: all 5s ease-in-out;
@@ -33,9 +36,19 @@ const MediaContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding-bottom: 3em;
+    padding-left: 6em;
+    padding-right: 6em;
+    font-size: 1.2em;
   }
   h4 {
     color: white;
+    font-size: 1.4em;
+  }
+  b {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-size: 1.4em;
   }
 `;
 
