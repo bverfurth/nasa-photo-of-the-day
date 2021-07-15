@@ -36,7 +36,6 @@ const MediaContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-bottom: 3em;
     padding-left: 6em;
     padding-right: 6em;
     font-size: 1.2em;
@@ -47,13 +46,13 @@ const MediaContainer = styled.div`
   }
   b {
     padding-top: 4em;
-    padding-bottom: 4em;
     font-size: 1.4em;
   }
 `;
 const TextContainer = styled.div`
+  padding: 8em;
   p {
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
   }
 `;
 
@@ -69,12 +68,10 @@ export default function Media(props) {
         <b>Image Credit & Copyright: </b>
         <img src="https://images-assets.nasa.gov/image/PIA18033/PIA18033~orig.jpg"></img>
         {data.copyright}
+        <b>Explanation: </b>
       </p>
       <TextContainer>
-        <p>
-          <b>Explanation: </b>
-          {data.explanation}
-        </p>
+        <p>{data.explanation}</p>
       </TextContainer>
     </MediaContainer>
   );

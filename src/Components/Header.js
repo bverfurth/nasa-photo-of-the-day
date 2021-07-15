@@ -20,10 +20,17 @@ export default function Header(props) {
     }
     p {
       color: white;
-      padding-bottom: 2em;
+      padding-bottom: 1em;
       font-size: 1.2em;
       padding-left: 4em;
       padding-right: 4em;
+    }
+  `;
+
+  const HeaderParagraph = styled.div`
+    p {
+      backdrop-filter: blur(4px);
+      padding: 4em;
     }
   `;
 
@@ -35,11 +42,13 @@ export default function Header(props) {
       </h1>
       <a>Click Here!! ---{">"} </a>
       <a href="astropix.html">Discover the cosmos! </a>
-      <p>
-        Each day a different image or photograph of our fascinating universe is
-        featured, along with a brief explanation written by a professional
-        astronomer.
-      </p>
+      <HeaderParagraph>
+        <p>
+          Each day a different image or photograph of our fascinating universe
+          is featured, along with a brief explanation written by a professional
+          astronomer.
+        </p>
+      </HeaderParagraph>
       <p>{data.date}</p>
     </HeaderContainer>
   );
